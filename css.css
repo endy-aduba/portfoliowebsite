@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    font-family: lato;
+}
+
+ul {
+    color: white;
+    list-style: none;
+    padding: 0px 0px;
+    display: flex;
+    margin: 0px;
+}
+
+li {
+    padding: 18px 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@keyframes trans {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: rgb(72, 81, 104);
+    }
+}
+
+li:hover {
+    animation-name: trans;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar {
+    background-color: rgb(218, 64, 44);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+}
+
+#welcome-section {
+    font-size: 24px;
+    width: 100%;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(61, 61, 197), rgb(175, 42, 175))
+}
+
+
+/* section for projects */
+
+#projects {
+    background-color: black;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.hi a {
+    color: rgb(253, 78, 78);
+    background: blue;
+}
+
+.hi {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+}
+
+@media(max-width:1150px) {
+    #navbar {
+        background-color: rgb(44, 125, 218);
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        width: 100%;
+    }
+}
